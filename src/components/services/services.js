@@ -1,4 +1,4 @@
-import './services.scss'
+import './scss/services.scss'
 import SectionHeader from "../sectionHeader"
 import Subtitle from './subtitle'
 import Title from './title'
@@ -10,18 +10,23 @@ function Services() {
     <section className="services">
       <SectionHeader text="Services" />
       <div className="services__wrapper first-section">
-        <Title text="SERVICES WE PROVIDE" />
-        <Subtitle className="services__subtitle" text={"Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.\n Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit." }/>
-        
-        <div className="services__slider">
-          <Slider items={SliderInfo} />
+        <div className="container">
+          <Title text="SERVICES WE PROVIDE" />
+          <Subtitle className="services__subtitle" text={"Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.\n Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit."} />
+
+          <div className="services__slider">
+            <Slider items={SliderInfo} />
+          </div>
         </div>
+
       </div>
       <div className="services__wrapper second-section">
-        <Title text="SERVICES WE PROVIDE" />
-        <Subtitle className="services__subtitle" text={"Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.\n Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit." }/>
-        <div className="services__features">
-          <Features items={FeaturesInfo}/>
+        <div className="container">
+          <Title text="SERVICES WE PROVIDE" />
+          <Subtitle className="services__subtitle" text={"Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.\n Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit."} />
+          <div className="services__features">
+            <Features items={FeaturesInfo} />
+          </div>
         </div>
       </div>
     </section>

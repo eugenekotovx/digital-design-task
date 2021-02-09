@@ -1,5 +1,6 @@
-import Services from './components/services/services'
-import './App.css';
+import './App.scss';
+
+import Services from './components/services/services';
 
 function App() {
   return (

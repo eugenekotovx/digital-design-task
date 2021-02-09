@@ -1,7 +1,7 @@
 import Carousel, { slidesToShowPlugin } from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
-import { ReactComponent as ArrowLeft} from '../../Icons/ArrowL.svg'
-import { ReactComponent as ArrowRight} from '../../Icons/ArrowR.svg'
+import { ReactComponent as ArrowLeft } from '../../Icons/ArrowL.svg'
+import { ReactComponent as ArrowRight } from '../../Icons/ArrowR.svg'
 function Slider({ items }) {
     return <Carousel
         className="carousel-container"

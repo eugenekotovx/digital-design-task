@@ -1,14 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;700&display=swap");
-@import "./variables.scss";
-@import "./mixins.scss";
+@import './variables.scss';
+@import './mixins.scss';
 
 .first-section {
   margin-bottom: 40px;
   padding-bottom: 95px;
 }
+
 .second-section {
   padding-bottom: 51px;
 }
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
 .section {
   &__header {
     margin-bottom: 71px;
@@ -53,10 +59,6 @@
     padding-top: 65px;
     position: relative;
   }
-  &__slider {
-    max-width: 940px;
-    margin: 0 auto;
-  }
 }
 
 .slider-item {
@@ -96,22 +98,15 @@
 .features {
   display: flex;
   flex-wrap: wrap;
-  max-width: 940px;
-  margin: 0 auto;
   padding-top: 34px;
-  width: 100%;
   justify-content: space-between;
-  padding-left: 47px;
+  padding-left: 25px;
 }
 .features-item {
   display: flex;
-  flex-basis: 45%;
-  width: 100%;
+  flex-basis: calc(50% - 47px);
   box-sizing: border-box;
   margin-bottom: 61px;
-  &:nth-child(even) {
-    margin-right: 13px;
-  }
   &__title {
     margin-bottom: 18px;
     @include service-title;

@@ -1,9 +1,9 @@
 import './scss/services.scss'
-import SectionHeader from "../sectionHeader"
-import Subtitle from './subtitle'
-import Title from './title'
-import Slider from './slider'
-import Features from './features'
+import SectionHeader from "../SectionHeader"
+import Subtitle from './Subtitle'
+import Title from './Title'
+import Slider from './Slider'
+import ServicesList from './ServicesList'
 
 function Services() {
   return (
@@ -12,8 +12,7 @@ function Services() {
       <div className="services__wrapper first-section">
         <div className="container">
           <Title text="SERVICES WE PROVIDE" />
-          <Subtitle className="services__subtitle" text={"Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.\n Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit."} />
-
+          <Subtitle text={"Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.\n Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit."} />
           <div className="services__slider">
             <Slider items={SliderInfo} />
           </div>
@@ -23,10 +22,8 @@ function Services() {
       <div className="services__wrapper second-section">
         <div className="container">
           <Title text="SERVICES WE PROVIDE" />
-          <Subtitle className="services__subtitle" text={"Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.\n Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit."} />
-          <div className="services__features">
-            <Features items={FeaturesInfo} />
-          </div>
+          <Subtitle text={"Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.\n Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit."} />
+          <ServicesList items={ServicesInfo} />
         </div>
       </div>
     </section>
@@ -73,7 +70,7 @@ const SliderInfo = [
   }
 ];
 
-const FeaturesInfo = [
+const ServicesInfo = [
   {
     id: 1,
     imgSrc: "./ellipse2.png",

@@ -8,11 +8,7 @@
 
 .second-section {
   padding-bottom: 51px;
-}
-
-.container {
-  max-width: 940px;
-  margin: 0 auto;
+  margin-bottom: 80px;
 }
 
 .section {
@@ -59,6 +55,13 @@
     padding-top: 65px;
     position: relative;
   }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 34px;
+    justify-content: space-between;
+    padding-left: 25px;
+  }
 }
 
 .slider-item {
@@ -95,14 +98,7 @@
   }
 }
 
-.features {
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 34px;
-  justify-content: space-between;
-  padding-left: 25px;
-}
-.features-item {
+.services-item {
   display: flex;
   flex-basis: calc(50% - 47px);
   box-sizing: border-box;

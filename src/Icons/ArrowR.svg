@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 106" width="33" height="106">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #777777 } 
+	</style>
+	<g id="Services 1">
+		<g id="Arrows">
+			<path id="Arrow_R" class="shp0" d="M0.14 1.5L1.86 0.49L32.86 53.49L31.14 54.5L0.14 1.5ZM0.01 104.99L1.75 106L32.99 53L31.25 51.99L0.01 104.99Z" />
+		</g>
+	</g>
+</svg>

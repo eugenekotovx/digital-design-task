@@ -1,5 +1,4 @@
-import logo from './logo.svg';
-import Services from './components/services'
+import Services from './components/services/services'
 import './App.css';
 
 function App() {

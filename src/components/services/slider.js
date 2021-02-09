@@ -4,7 +4,7 @@ import { ReactComponent as ArrowLeft} from '../../Icons/ArrowL.svg'
 import { ReactComponent as ArrowRight} from '../../Icons/ArrowR.svg'
 function Slider({ items }) {
     return <Carousel
-        className="carousel-cont"
+        className="carousel-container"
         slidesPerPage={3}
         slidesPerScroll={1}
         offset={87}

@@ -1,34 +1,30 @@
 import './services.scss'
-import SectionHeader from "./sectionHeader"
-import Title from './services/title'
-import Slider from './services/slider'
-import Features from './services/features'
+import SectionHeader from "../sectionHeader"
+import Subtitle from './subtitle'
+import Title from './title'
+import Slider from './slider'
+import Features from './features'
 
 function Services() {
   return (
-    <div className="services">
+    <section className="services">
       <SectionHeader text="Services" />
       <div className="services__wrapper first-section">
         <Title text="SERVICES WE PROVIDE" />
-        <h2 className="services__subtitle">
-          Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. <br></br>
-          Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
-        </h2>
+        <Subtitle className="services__subtitle" text={"Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.\n Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit." }/>
+        
         <div className="services__slider">
           <Slider items={SliderInfo} />
         </div>
       </div>
-      <div className="services__wrapper">
+      <div className="services__wrapper second-section">
         <Title text="SERVICES WE PROVIDE" />
-        <h2 className="services__subtitle">
-          Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. <br></br>
-          Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
-        </h2>
+        <Subtitle className="services__subtitle" text={"Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.\n Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit." }/>
         <div className="services__features">
           <Features items={FeaturesInfo}/>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
